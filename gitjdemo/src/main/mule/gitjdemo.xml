@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="15683f4d-e37b-4c0d-a4ba-3f3ee9e96bae" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<flow name="gitjdemoFlow" doc:id="ccd8a769-3fa2-4c53-829e-d39c07043061" >
+		<http:listener doc:name="Listener" doc:id="74a73e16-b4d9-46ce-a664-b9535d85c66f" config-ref="HTTP_Listener_config" path="/git"/>
+		<set-payload value="Employee Deyails" doc:name="Set Payload" doc:id="99535b06-21cb-4793-baa7-4ff75da592d2" />
+	</flow>
+</mule>
