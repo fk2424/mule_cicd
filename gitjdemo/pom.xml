@@ -44,7 +44,7 @@
                         <muleVersion>4.3.0</muleVersion>
                         <workers>1</workers>
                         <workerType>Micro</workerType>
-                        <applicationName>Git_Demo_Api</applicationName>
+                        <applicationName>GitDemoAPI</applicationName>
                         <objectStoreV2>true</objectStoreV2>
                     </cloudHubDeployment>
 				
